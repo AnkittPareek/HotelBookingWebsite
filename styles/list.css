@@ -1,6 +1,14 @@
 body{
+    margin: 0;
+    background-color: #e0e0e0;
     height: 100vh;
     width: 100vw;
+}
+header{
+    background-color: rosybrown;
+}
+footer{
+    background-color: rosybrown;
 }
 #container{
     height: 100vh;
@@ -17,4 +25,9 @@ body{
 .hotelImage{
     height: 200px;
     width: 250px;
+}
+.hotelDivs{
+    margin: 2%;
+    background-color: rgb(132, 136, 139);
+    width: 40%;
 }
