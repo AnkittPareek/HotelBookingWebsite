@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, 
     initial-scale=1.0">
     <link rel="stylesheet" href="/styles/list.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/common.css">
     <title>List</title>
 </head>
 <body>
@@ -14,22 +16,22 @@
         <header>
             <a href="index.html"><img id="logo" src="./assests/images/logo.png" height="150px" 
             width="170px" alt="Logo"></a>      
-            <a href="login.html" target="_self">Login</a>
+            <a href="login.html" target="_self"><span  id="login">Login</span></a>
         </header>
 
         <div id=contentDiv>
 
-            <ul>
-                <li><a href="#listView">List View</a></li>
-                <li><a href="#mapView">Map View</a></li>
+            <ul id="listofviews">
+                <li class="lsitem"><a href="#listView" style="text-decoration: none; color: #000;"><strong> List View</strong> </a></li>
+                <li class="lsitem"><a href="#mapView" style="text-decoration: none; color: #000;"><Strong>Map View</strong></a></li>
             </ul>
             <div id="listView">
                 <a href="detail.html"><div class="hotelDivs">
                     <img class="hotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" 
                     alt="Radison Blu Hotel">
-                    <a href=""><h3>Radison Blu Hotel</h3></a>
-                    <a href=""><p>5 Star</p></a>
-                    <a href=""><p>New Delhi</p></a>
+                    <a href="detail.html" style="color: #000; text-decoration: none;"><h3>Radison Blu Hotel</h3></a>
+                    <a href="detail.html"style="color: #000; text-decoration: none;"><p>5 Star</p></a>
+                    <a href="detail.html"style="color: #000; text-decoration: none;"><p>New Delhi</p></a>
                 </div></a>
 
                 <div class="hotelDivs">
@@ -55,14 +57,14 @@
             </div>
         </div>
         <footer>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.html"><p  style=" padding: 0 10px; color: #000; float: left;">Contact Us</p></a>
             <br>
-            <a href="https://www.facebook.com" target="_blank"><img  class="socialMedia" src="assests/images/facebook.png" alt="facebook"></a>
-            <a href="https://www.instagram.com" target="_blank" ><img class="socialMedia"  src="assests/images/instagram.png" alt="instagram"></a>
-            <a href="https://www.twitter.com" target="_blank"><img  class="socialMedia" src="assests/images/twitter.png" alt="twitter"></a>
-            <br>
-            <span>Ⓒ 2021 AnkitProject</span>
+            <a href="https://www.twitter.com" target="_blank"><img class="socialMedia" src="assests/images/twitter.png" alt="twitter"></a>
+            <a href="https://www.instagram.com" target="_blank" ><img class="socialMedia" src="assests/images/instagram.png" alt="instagram"></a> 
+            <a href="https://www.facebook.com" target="_blank"><img class="socialMedia" src="assests/images/facebook.png" alt="facebook"></a>
+            <p id="copyright">Ⓒ 2021 AnkitProject</p>
         </footer>
+
     </div>
 </body>
 </html>

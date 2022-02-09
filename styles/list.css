@@ -4,12 +4,6 @@ body{
     height: 100vh;
     width: 100vw;
 }
-header{
-    background-color: rosybrown;
-}
-footer{
-    background-color: rosybrown;
-}
 #container{
     height: 100vh;
     width: 100vw;
@@ -30,4 +24,27 @@ footer{
     margin: 2%;
     background-color: rgb(132, 136, 139);
     width: 40%;
+}
+#login{
+    box-sizing: border-box;
+    color: black;
+    float: right;
+    height: 100%;
+    padding: 18px 10px;
+}
+#mapView{
+    display: none;
+}
+#listView{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+}
+#contentDiv > ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+#contentDiv > ul> li{
+    margin:  0 2%;
 }

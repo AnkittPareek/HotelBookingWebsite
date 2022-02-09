@@ -4,32 +4,14 @@ body{
     height: 100vh;
     width: 100vw;
 }
-header{
-    background-color: rosybrown;
-}
-footer{
-    background-color: rosybrown;
-}
-#container{
-    height: 100vh;
-    width: 100vw;
-}
-#logo{
-    height: 60px;
-    width: 60px;
-}
-.socialMedia{
-    height: 20px;
-    width: 22px;
-}   
 .hotelImage{
     height: 500px;
     width: 500px;
 }
+
 #descriptionDiv{
     background-color: rgb(132, 136, 139);
     width: 50%;
-    height: 20%;
     margin: 2% auto;
 }
 #customerInfoDiv{

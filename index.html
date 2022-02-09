@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/common.css">
     <title>Index</title>
 </head>
 <body>
@@ -12,30 +14,29 @@
 
         <header>
             <img id="logo" src="./assests/images/logo.png" height="150px" width="160px" alt="Logo">
-            <a href="login.html" target="_self">Login</a>
+            <a href="login.html" target="_self"><span  id="login">Login</span></a>
         </header>
 
         <div id="contentDiv">
             <div id="searchbarDiv">
-                <input type="text" name="searchbar" placeholder="City">    
+                <input id="searchbar" type="text" name="searchbar" placeholder="City">    
             </div>
             
             <div id="cityDiv">
-                <a href="list.html" target="_self"><img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="New-Delhi Image"></a>
-                <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="Goa Image">
-                <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="charminar Image">
-                <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="Calcutta Image">
+                <div><a href="list.html" target="_self"><img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="New-Delhi Image"></a></div>
+                <div><img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="Goa Image"></div>
+                <div><img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="charminar Image"></div>
+                <div><img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="Calcutta Image"></div>
             </div>
-            <a href="">View more>></a>
+            <a style="color: #000; text-decoration: none;" href=""><p style="text-align: center;" >View more>></p></a>
         </div>
         <footer>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.html"><p  style=" padding: 0 10px; color: #000; float: left;">Contact Us</p></a>
             <br>
-            <a href="https://www.facebook.com" target="_blank"><img class="socialMedia" src="assests/images/facebook.png" alt="facebook"></a>
-            <a href="https://www.instagram.com" target="_blank" ><img class="socialMedia" src="assests/images/instagram.png" alt="instagram"></a>
             <a href="https://www.twitter.com" target="_blank"><img class="socialMedia" src="assests/images/twitter.png" alt="twitter"></a>
-            <br>
-            <span>Ⓒ 2021 AnkitProject</span>
+            <a href="https://www.instagram.com" target="_blank" ><img class="socialMedia" src="assests/images/instagram.png" alt="instagram"></a> 
+            <a href="https://www.facebook.com" target="_blank"><img class="socialMedia" src="assests/images/facebook.png" alt="facebook"></a>
+            <p id="copyright">Ⓒ 2021 AnkitProject</p>
         </footer>
 
     </div>
