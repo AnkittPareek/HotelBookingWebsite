@@ -1,50 +1,69 @@
-body{
-    margin: 0;
-    background-color: #e0e0e0;
-    height: 100vh;
-    width: 100vw;
+body {
+  margin: 0;
+  background-color: #e0e0e0;
+  height: 100vh;
+  width: 100vw;
 }
-#container{
-    height: 100vh;
-    width: 100vw;
+
+#container {
+  height: 100vh;
+  width: 100vw;
 }
-#logo{
-    height: 60px;
-    width: 60px;
+
+#logo {
+  height: 60px;
+  width: 60px;
 }
-.socialMedia{
-    height: 20px;
-    width: 22px;
+
+.socialMedia {
+  height: 20px;
+  width: 22px;
 }
-.hotelImage{
-    height: 200px;
-    width: 250px;
+
+.hotelImage {
+  height: 200px;
+  width: 250px;
 }
-.hotelDivs{
-    margin: 2%;
-    background-color: rgb(132, 136, 139);
-    width: 40%;
+
+.hotelDivs {
+  display: flex;
+  margin: 2%;
+  background-color: lightgray;
+  width: 40%;
 }
-#login{
-    box-sizing: border-box;
-    color: black;
-    float: right;
-    height: 100%;
-    padding: 18px 10px;
+
+.description{
+  margin-left: 4%;
 }
-#mapView{
-    display: none;
+
+#login {
+  box-sizing: border-box;
+  color: black;
+  float: right;
+  height: 100%;
+  padding: 18px 10px;
 }
-#listView{
-    display: flex;
-    flex-wrap:wrap;
-    align-items: flex-start;
+
+#mapView {
+  display: none;
 }
-#contentDiv > ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+
+#listView {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  /* align-items: flex-start; */
 }
-#contentDiv > ul> li{
-    margin:  0 2%;
+#listView > div{
+  margin-left: 6%;
+}
+
+#contentDiv>ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+#contentDiv>ul>li {
+  margin: 0 2%;
 }

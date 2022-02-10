@@ -1,25 +1,37 @@
-body{
-    margin: 0;
-    background-color: #e0e0e0;
-    height: 100vh;
-    width: 100vw;
-}
-.hotelImage{
-    height: 500px;
-    width: 500px;
+body {
+  margin: 0;
+  background-color: #e0e0e0;
+  height: 100vh;
+  width: 100vw;
 }
 
-#descriptionDiv{
-    background-color: rgb(132, 136, 139);
-    width: 50%;
-    margin: 2% auto;
+.hotelImage {
+  max-height: 300px;
+  max-width: 270px;
 }
-#customerInfoDiv{
-    margin: 2%;
+
+#descriptionDiv {
+  background-color: rgb(132, 136, 139);
+  width: 50%;
+  margin: 2% auto;
+  display: flex;
 }
-#tarrifDiv{
-    margin: 2%;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 1% 2%;
+
+#description{
+  padding: 0 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+#paymentDiv{
+  margin: 2%;
+  border: 1px solid black;
+  background-color: rosybrown;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

@@ -1,41 +1,71 @@
-body{
-    margin: 0 auto;
-    background-color: #e0e0e0;
-    min-height: 100%;
-    min-width: 100%;
+body {
+  margin: 0 auto;
+  background-color: #e0e0e0;
+  min-height: 100%;
+  min-width: 100%;
 }
 
-#container{
-    height: 100%;
-    width: 100%;
-}
-.cityImage{
-    height: 150px;
-    width: 150px;
-    padding: 4%;
-    border-radius: 25%;
-}
-#searchbar{
-    border: 1px solid;
-    border-color: #f1f1f1;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 12px;
-    width: 26%;
-}
-#searchbarDiv{
-    display: grid;
-    position: relative;
-    background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 480px;
-    place-items: center;
-}
-#cityDiv{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 3% 15% ; 
+#container {
+  height: 100%;
+  width: 100%;
 }
 
+.cityImage {
+  display: flex;
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+  box-shadow:  10px 10px 10px grey;
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  place-items: center;
+  justify-content: space-around;
+}
+.foregroundColor{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  border-radius: 25%;
+  visibility: hidden;
+}
+.foregroundColor p{
+  color:  #f1f1f1;
+}
+.cityImage:hover div{
+  visibility: visible;
+}
+#searchbar {
+  border: 1px solid;
+  border-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 12px;
+  width: 26%;
+}
+
+#searchbar:focus{
+  outline: rgba(0, 0, 0, 0.5);
+}
+
+#searchbarDiv {
+  display: grid;
+  position: relative;
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 480px;
+  place-items: center;
+}
+
+
+#cityDiv {
+  min-height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  place-items: center;
+}

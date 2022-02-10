@@ -1,44 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/common.css">
-    <title>Index</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/common.css">
+  <title>Index</title>
 </head>
+
 <body>
-    <div id="container">
+  <div id="container">
 
-        <header>
-            <img id="logo" src="./assests/images/logo.png" height="150px" width="160px" alt="Logo">
-            <a href="login.html" target="_self"><span  id="login">Login</span></a>
-        </header>
+    <header>
+      <img id="logo" src="./assests/images/logo.png" height="150px" width="160px" alt="Logo">
+      <div id="loginDiv">
+        <a href="login.html" target="_self">
+          <p id="login">Login</p>
+        </a>
+      </div>
+    </header>
 
-        <div id="contentDiv">
-            <div id="searchbarDiv">
-                <input id="searchbar" type="text" name="searchbar" placeholder="City">    
+    <div id="contentDiv">
+      <div id="searchbarDiv">
+        <input id="searchbar" type="text" name="searchbar" placeholder="City">
+      </div>
+
+      <div id="cityDiv">
+        <a href="list.html" target="_self" style="text-decoration: none;">
+          <div class="cityImage" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg) ;">
+            <div class="foregroundColor">
+              <p >Delhi</p>
             </div>
-            
-            <div id="cityDiv">
-                <div><a href="list.html" target="_self"><img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="New-Delhi Image"></a></div>
-                <div><img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="Goa Image"></div>
-                <div><img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="charminar Image"></div>
-                <div><img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="Calcutta Image"></div>
-            </div>
-            <a style="color: #000; text-decoration: none;" href=""><p style="text-align: center;" >View more>></p></a>
+          </div>
+        </a>
+        <div  class="cityImage" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg) ;">
+          <div class="foregroundColor">
+            <p>Goa</p>
+          </div>
         </div>
-        <footer>
-            <a href="contact.html"><p  style=" padding: 0 10px; color: #000; float: left;">Contact Us</p></a>
-            <br>
-            <a href="https://www.twitter.com" target="_blank"><img class="socialMedia" src="assests/images/twitter.png" alt="twitter"></a>
-            <a href="https://www.instagram.com" target="_blank" ><img class="socialMedia" src="assests/images/instagram.png" alt="instagram"></a> 
-            <a href="https://www.facebook.com" target="_blank"><img class="socialMedia" src="assests/images/facebook.png" alt="facebook"></a>
-            <p id="copyright">Ⓒ 2021 AnkitProject</p>
-        </footer>
-
+        <div class="cityImage"  style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg) ;">
+          <div class="foregroundColor">
+            <p>Hyderabad</p>
+          </div>
+        </div>
+        <div class="cityImage" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg) ;">
+          <div class="foregroundColor">
+            <p>kolkata</p>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <a style="color: #000; text-decoration: none;" href="">
+          <p style="text-align: center;">View more>></p>
+        </a>
+      </div>
     </div>
+
+    <footer>
+      <div id="contactDiv">
+        <a style="text-decoration: none;" href="contact.html">
+          <p style="color: #000;">Contact Us</p>
+        </a>
+      </div>
+      <div id="copyrightDiv">
+        <p id="copyright">Ⓒ 2021 AnkitProject</p>
+      </div>
+      <div id="socialMediaDiv">
+        <a href="https://www.facebook.com" target="_blank"><img class="socialMedia" src="assests/images/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com" target="_blank"><img class="socialMedia" src="assests/images/instagram.png" alt="instagram"></a>
+        <a href="https://www.twitter.com" target="_blank"><img class="socialMedia" src="assests/images/twitter.png" alt="twitter"></a>
+      </div>
+    </footer>
+
+  </div>
 </body>
+
 </html>

@@ -1,49 +1,78 @@
-*{
-    font-family: 'Ubuntu', sans-serif;
+* {
+  font-family: 'Ubuntu', sans-serif;
 }
-header{
-    background-color: rosybrown;
-    position:absolute; 
-    top:0px; 
-    left:0px;  
-    overflow:hidden;
-    width: 100%;
-    height: 60px;
-    position: fixed;
+
+header {
+  background-color: rosybrown;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 60px;
+  position: fixed;
 }
-footer{
-    background-color: rosybrown;
-    position:absolute;
-    height: 60px;
-    bottom:0px;  
-    left:0px; 
-    right:0px; 
-    overflow:hidden;
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rosybrown;
+  position: absolute;
+  height: 60px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
 }
-#contentDiv{
-    position:absolute; 
-    top:60px; 
-    bottom:60px; 
-    left:0px; 
-    right:0px; 
-    overflow:auto;
+
+#contentDiv {
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  bottom: 60px;
+  left: 0px;
+  right: 0px;
+  overflow: auto;
 }
-#logo{
-    height: 60px;
-    width: 60px;
+
+#logo {
+  margin-left: 1%;
+  height: 60px;
+  width: 60px;
 }
-#login{
-    box-sizing: border-box;
-    color: black;
-    float: right;
-    height: 100%;
-    padding: 18px 10px;
+
+#loginDiv {
+  margin-right: 2%;
 }
-#copyright{
-    text-align: center;
-}.socialMedia{
-    height: 20px;
-    width: 22px;
-    float: right;
-    padding: 0 3px;
+
+#login {
+  color: black;
+  margin-right: 2%;
+}
+
+#copyright {
+  text-align: center;
+}
+
+.socialMedia {
+  height: 20px;
+  width: 22px;
+  padding: 0 3px;
+}
+
+#contactDiv {
+  margin-left: 2%;
+}
+
+#socialMediaDiv {
+  margin-right: 2%;
+}
+.heading{
+  font-family: cursive;
 }

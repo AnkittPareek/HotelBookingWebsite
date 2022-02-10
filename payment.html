@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/payment.css">
-    <link rel="stylesheet" href="/styles/common.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <title>Payment</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/payment.css">
+  <link rel="stylesheet" href="styles/common.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <title>Payment</title>
 </head>
+
 <body>
-    <div>
-        <header>
-            <a href="index.html"><img src="./assests/images/logo.png" id="logo" alt="Logo"></a> 
-            <a href="login.html" target="_self"><span  id="login">Login</span></a>
-        </header>
+  <div>
+    <header>
+      <a href="index.html"><img id="logo" src="./assests/images/logo.png" height="150px" width="170px" alt="Logo"></a>
+      <div id="loginDiv">
+        <a href="login.html" target="_self">
+          <p id="login">Login</p>
+        </a>
+      </div>
+    </header>
 
-        <div id="contentDiv">
+    <div id="contentDiv">
 
-            <div id="descriptionDiv">
-                <img class="hotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" 
-                alt="Radison Blu Hotel">
-                <br>
-                <h2>Radison Blu Hotel</h2>  
-                <p>#38 of 1,289 hotels in New Delhi</p>
-                <p>National Highway 8, New Delhi 110017 India</p>
-            </div>
-            <div id="customerInfoDiv">
-                <p><strong>Name:</strong><span> John Doe</span></p>
-                <p><strong>Number of Adults:</strong><span> 2</span></p>
-                <p><strong>Check-in Date:</strong><span> 30-01-2022</span></p>
-                <p><strong>Check-out Date:</strong><span> 01-02-2022</span></p>
-            </div>
-            <div id="tarrifDiv">
-                <p><strong>Tarrif Breakdown:</strong><span> Rs. 1000 x 2 Adults x 2 Nights</span></p>
-                <p><strong>Total Amount:</strong><span> Rs. 4000</span></p>
-            </div>
-            <div>
-                <a href="">Pay Now</a>
-            </div>
-
+      <div id="descriptionDiv">
+        <img class="hotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radison Blu Hotel">
+        <div id="description">
+          <h2>Radison Blu Hotel</h2>
+          <p>#38 of 1,289 hotels in New Delhi</p>
+          <p>National Highway 8, New Delhi 110017 India</p>
+        </div>
+      </div>
+      <div id="paymentDiv">
+        <div id="customerInfoDiv">
+          <p ><strong><span class="heading"> Name:</span></strong><span> John Doe</span></p>
+          <p ><strong><span class="heading"> Number of Adults:</span></strong><span> 2</span></p>
+          <p ><strong><span class="heading"> Check-in Date:</span></strong><span> 30-01-2022</span></p>
+          <p ><strong><span class="heading"> Check-out Date:</span></strong><span> 01-02-2022</span></p>
         </div>
 
-        <footer>
-            <a href="contact.html"><p  style=" padding: 0 10px; color: #000; float: left;">Contact Us</p></a>
-            <br>
-            <a href="https://www.twitter.com" target="_blank"><img class="socialMedia" src="assests/images/twitter.png" alt="twitter"></a>
-            <a href="https://www.instagram.com" target="_blank" ><img class="socialMedia" src="assests/images/instagram.png" alt="instagram"></a> 
-            <a href="https://www.facebook.com" target="_blank"><img class="socialMedia" src="assests/images/facebook.png" alt="facebook"></a>
-            <p id="copyright">Ⓒ 2021 AnkitProject</p>
-        </footer>
+        <div id="tarrifDiv">
+          <p ><strong><span class="heading"> Tarrif Breakdown:</span></strong><span> Rs. 1000 x 2 Adults x 2 Nights</span></p>
+          <p ><strong><span class="heading"> Total Amount:</span></strong><span> Rs. 4000</span></p>
+        </div>
+        
+        <div>
+          <a href="">Pay Now</a>
+        </div>
+      </div>
     </div>
+
+    <footer>
+      <div id="contactDiv">
+        <a style="text-decoration: none;" href="contact.html">
+          <p style="color: #000;">Contact Us</p>
+        </a>
+      </div>
+      <div id="copyrightDiv">
+        <p id="copyright">Ⓒ 2021 AnkitProject</p>
+      </div>
+      <div id="socialMediaDiv">
+        <a href="https://www.facebook.com" target="_blank"><img class="socialMedia" src="assests/images/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com" target="_blank"><img class="socialMedia" src="assests/images/instagram.png" alt="instagram"></a>
+        <a href="https://www.twitter.com" target="_blank"><img class="socialMedia" src="assests/images/twitter.png" alt="twitter"></a>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>

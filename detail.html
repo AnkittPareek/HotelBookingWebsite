@@ -1,69 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/detail.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/common.css">
-    <title>Detail</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/detail.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/common.css">
+  <title>Detail</title>
 </head>
+
 <body>
-    <div id="container">
+  <div id="container">
 
-        <header>
-            <a href="index.html"><img id="logo" src="./assests/images/logo.png" 
-                height="150px" width="160px" alt="Logo"></a>
-                <a href="login.html" target="_self"><span  id="login">Login</span></a>
-            </header>
+    <header>
+      <a href="index.html"><img id="logo" src="./assests/images/logo.png" height="150px" width="170px" alt="Logo"></a>
+      <div id="loginDiv">
+        <a href="login.html" target="_self">
+          <p id="login">Login</p>
+        </a>
+      </div>
+    </header>
 
-        <div id="contentDiv">
-            <img class="hotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" 
-                alt="Radison Blu Hotel">
-                <br>
-                <form id="form" action="payment.html">
-                    <label for="adults">Adults:</label>
-                    <input type="number" name="adults" id="" min="1" required><br>
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="" required><br>
-                    <label for="fromDate">From Date:</label>
-                    <input type="date" name="fromDate" id="" required><br>
-                    <label for="toDate">To Date:</label>
-                    <input type="date" name="toDate" id="" required><br>
-                    <label for="total">Total:</label>
-                    <input type="text" name="" id="" readonly><br>
-                    <input type="submit" value="Book Now">
-                </form>
-                <div id="descriptionDiv">
-                    <h2>Radison Blu Hotel</h2>
-                    <p>RATING</p>
-                    <p>5 Star</p>
-                    <p>AMENITIES</p>
-                    <ul>
-                        <li>Room service</li>
-                        <li>Restaurant</li>
-                        <li>Business center</li>
-                        <li>Fitness center</li>
-                        <li>pool</li>
-                    </ul>
-                    <h5>DESCRIPTION</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima sit accusantium 
-                       aut laudantium vel repellat, molestiae temporibus culpa voluptatum deleniti nobis eveniet
-                       perferendis sed a, numquam sequi cumque quo!</p>
-                </div>
+    <div id="contentDiv">
+      <div class="detailDiv">
+        <div id="formImg">
+          <img class="hotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radison Blu Hotel">
         </div>
-
-        <footer>
-            <a href="contact.html"><p  style=" padding: 0 10px; color: #000; float: left;">Contact Us</p></a>
-            <br>
-            <a href="https://www.twitter.com" target="_blank"><img class="socialMedia" src="assests/images/twitter.png" alt="twitter"></a>
-            <a href="https://www.instagram.com" target="_blank" ><img class="socialMedia" src="assests/images/instagram.png" alt="instagram"></a> 
-            <a href="https://www.facebook.com" target="_blank"><img class="socialMedia" src="assests/images/facebook.png" alt="facebook"></a>
-            <p id="copyright">Ⓒ 2021 AnkitProject</p>
-        </footer>
-
-
+          <form id="form" action="payment.html">
+            <div class="inputs">
+              <label for="adults">Adults:</label>
+              <input type="number" name="adults" id="" min="1" required>
+            </div>
+            <div class="inputs">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="" required>
+            </div>
+            <div class="inputs">
+              <label for="fromDate">From Date:</label>
+              <input type="date" name="fromDate" id="" required>
+            </div>
+            <div class="inputs">
+              <label for="toDate">To Date:</label>
+              <input type="date" name="toDate" id="" required>
+            </div>
+            <div class="inputs">
+              <label for="total">Total:</label>
+              <input type="text" name="" id="" readonly>
+            </div>
+            <div id="submitButton">
+              <input type="submit" value="Book Now">
+            </div>
+          </form>
+      </div> 
+      <div id="descriptionDiv">
+        <h2>Radison Blu Hotel</h2>
+        <p style="font-family: cursive;">RATING</p>
+        <p>5 Star</p>
+        <p style="font-family: cursive;">AMENITIES</p>
+        <ul>
+          <li>Room service</li>
+          <li>Restaurant</li>
+          <li>Business center</li>
+          <li>Fitness center</li>
+          <li>pool</li>
+        </ul>
+        <h5 style="font-family: cursive;">DESCRIPTION</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima sit accusantium
+          aut laudantium vel repellat, molestiae temporibus culpa voluptatum deleniti nobis eveniet
+          perferendis sed a, numquam sequi cumque quo!</p>
+      </div>
     </div>
+
+    <footer>
+      <div id="contactDiv">
+        <a style="text-decoration: none;" href="contact.html">
+          <p style="color: #000;">Contact Us</p>
+        </a>
+      </div>
+      <div id="copyrightDiv">
+        <p id="copyright">Ⓒ 2021 AnkitProject</p>
+      </div>
+      <div id="socialMediaDiv">
+        <a href="https://www.facebook.com" target="_blank"><img class="socialMedia" src="assests/images/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com" target="_blank"><img class="socialMedia" src="assests/images/instagram.png" alt="instagram"></a>
+        <a href="https://www.twitter.com" target="_blank"><img class="socialMedia" src="assests/images/twitter.png" alt="twitter"></a>
+      </div>
+    </footer>
+
+
+  </div>
 </body>
+
 </html>
