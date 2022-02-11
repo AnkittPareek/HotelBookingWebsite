@@ -51,7 +51,9 @@ body {
 #mapView {
   display: none;
 }
-
+#mapView img{
+  width: 90%;
+}
 #listView {
   display: flex;
   /* justify-content: space-between; */
@@ -105,6 +107,7 @@ body {
 }
 #map-view-button:checked ~ #mapView {
   display: flex;
+  justify-content: center;
 }
 #map-view-button:checked ~ #listView {
   display: none;
@@ -121,4 +124,49 @@ body {
 }
 .btn-check{
   visibility: hidden;
+}
+
+@media only screen and (min-width:576px) and ( max-width:768px) {
+  #listView{
+    display: flex;
+    flex-direction: column;
+  }
+  .hotelImage {
+    max-width: 180px;
+  }
+  .hotelDivs {
+    display: flex;
+    width: 80%;
+  }
+  #mapView img{
+    width: 90%;
+  }
+  #mapView{
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width:576px){
+
+  #listView{
+    display: flex;
+    flex-direction: column;
+  }
+  .hotelImage {
+    width: 100%;
+  }
+  .hotelDivs {
+    margin: 10% 0;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  #mapView img{
+    width: 90%;
+  }
+  #mapView{
+    display: flex;
+    justify-content: center;
+  }
+
 }

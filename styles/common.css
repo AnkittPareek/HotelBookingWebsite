@@ -80,3 +80,26 @@ footer {
 #contactBtn{
   margin-bottom: 2%;
 }
+@media only screen and (min-width:576px) and ( max-width:768px) {
+
+  #copyright {
+  padding-top: 20px;
+  padding-right: 10px;
+  text-align: center;
+  }
+
+}
+@media only screen and (max-width:576px){
+
+  #copyright {
+    padding-top: 20px;
+    padding-right: 10px;
+    text-align: center;
+    }
+
+    .socialMedia {
+      height: 20px;
+      width: 22px;
+      padding: 0 1px;
+    }
+}

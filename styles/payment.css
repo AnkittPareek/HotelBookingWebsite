@@ -24,8 +24,6 @@ body {
   justify-content: center;
 }
 
-
-
 #paymentDiv{
   margin: 2%;
   border: 1px solid black;
@@ -34,4 +32,44 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+@media only screen and (min-width:576px) and ( max-width:768px) {
+  #descriptionDiv{
+    width: 90%;
+    margin: 5%;
+  }
+  
+}
+@media only screen and (max-width:576px){
+  
+  #descriptionDiv{
+    width: 100%;
+    margin: 5% 0%;
+    display: flex;
+    flex-direction: column;
+  }
+  #descriptionDiv img{
+    min-width: 100%;
+  }
+  #descriptionDiv div{
+    margin: 6% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #paymentDiv{
+    margin: 2% 2%;
+    padding: 2% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #payBtn{
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
 }

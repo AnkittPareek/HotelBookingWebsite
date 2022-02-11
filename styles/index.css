@@ -22,6 +22,7 @@ body {
   place-items: center;
   justify-content: space-around;
 }
+
 .foregroundColor{
   display: flex;
   justify-content: space-around;
@@ -32,12 +33,15 @@ body {
   border-radius: 25%;
   visibility: hidden;
 }
+
 .foregroundColor p{
   color:  #f1f1f1;
 }
+
 .cityImage:hover div{
   visibility: visible;
 }
+
 #searchbar {
   border: 1px solid;
   border-color: #f1f1f1;
@@ -63,6 +67,7 @@ body {
 }
 
 
+
 #cityDiv {
   min-height: 400px;
   display: flex;
@@ -74,4 +79,33 @@ body {
   display: flex;
   justify-content: center;
   margin: 4% 0;
+}
+
+@media only screen and (min-width:576px) and ( max-width:768px) {
+  #searchbar{
+    width: 40%;
+  }
+  #searchbarDiv{
+    min-height: 350px;
+  }
+  #cityDiv{
+    display: grid;
+    grid-template-columns: 40% 40%;
+  }
+}
+@media only screen and (max-width:576px){
+  #searchbar{
+    width: 40%;
+  }
+  #searchbarDiv{
+    min-height: 200px;
+  }
+  #cityDiv{
+    margin: 10% 0;
+    display: grid;
+    grid-row-gap: 20px;
+  }
+  #viewMoreBtn{
+    margin-top: 80%;
+  }
 }
