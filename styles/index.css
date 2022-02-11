@@ -69,3 +69,9 @@ body {
   justify-content: space-evenly;
   place-items: center;
 }
+
+#viewMoreBtn{
+  display: flex;
+  justify-content: center;
+  margin: 4% 0;
+}

@@ -54,6 +54,7 @@ footer {
 #login {
   color: black;
   margin-right: 2%;
+  margin: 2%;
 }
 
 #copyright {
@@ -75,4 +76,7 @@ footer {
 }
 .heading{
   font-family: cursive;
+}
+#contactBtn{
+  margin-bottom: 2%;
 }
