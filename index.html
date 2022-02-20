@@ -17,6 +17,8 @@
 <body>
   <div id="container">
 
+<!------------------------------------------------------------Header------------------------------------------------------------>
+
     <header>
       <img id="logo" src="./assests/images/logo.png" height="150px" width="160px" alt="Logo">
       <div id="loginDiv">
@@ -26,6 +28,7 @@
       </div>
     </header>
 
+<!------------------------------------------------------------Login Modal------------------------------------------------------------>
     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -52,6 +55,9 @@
       </div>
     </div>
 
+
+<!------------------------------------------------------------Contact Modal------------------------------------------------------------>
+
     <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -75,13 +81,19 @@
       </div>
     </div>
 
+
+
+<!------------------------------------------------------------Content Div------------------------------------------------------------>
+
     <div id="contentDiv">
       <div id="searchbarDiv">
         <input id="searchbar" type="text" name="searchbar" placeholder="City">
       </div>
 
+<!------------------------------------------------------------City Cards------------------------------------------------------------>
+
       <div id="cityDiv">
-        <a href="list.html" target="_self" style="text-decoration: none;">
+        <a href="list.html" class="cityImage" target="_self" style="text-decoration: none;">
           <div class="cityImage" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg) ;">
             <div class="foregroundColor">
               <p>Delhi</p>
@@ -105,12 +117,45 @@
         </div>
       </div>
 
+
+      <div id="cityDiv">
+        <a href="list.html" class="cityImage" target="_self" style="text-decoration: none;">
+          <div class="cityImage" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg) ;">
+            <div class="foregroundColor">
+              <p>Chennai</p>
+            </div>
+          </div>
+        </a>
+        <div class="cityImage" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg) ;">
+          <div class="foregroundColor">
+            <p>Agra</p>
+          </div>
+        </div>
+        <div class="cityImage" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg) ;">
+          <div class="foregroundColor">
+            <p>Jaipur</p>
+          </div>
+        </div>
+        <div class="cityImage" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg) ;">
+          <div class="foregroundColor">
+            <p>Bengaluru</p>
+          </div>
+        </div>
+      </div>
+
+
+<!------------------------------------------------------------ViewMore Button------------------------------------------------------------>
+
       <div id="viewMoreBtn">
         <a style="color: #000; text-decoration: none;" href="">
           <button class="btn btn-secondary">View more</button>
         </a>
       </div>
     </div>
+
+
+
+<!------------------------------------------------------------Footer------------------------------------------------------------>
 
     <footer>
       <div id="contactDiv">

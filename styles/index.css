@@ -9,7 +9,35 @@ body {
   height: 100%;
   width: 100%;
 }
+/*------------------------------------------------------------SearchBar------------------------------------------------------------*/
 
+#searchbar {
+  border: 1px solid;
+  border-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 12px;
+  width: 26%;
+}
+
+#searchbar:focus{
+  outline: rgba(0, 0, 0, 0.5);
+}
+
+#searchbarDiv {
+  display: grid;
+  position: relative;
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 480px;
+  place-items: center;
+}
+
+
+
+/*------------------------------------------------------------City cards------------------------------------------------------------*/
 .cityImage {
   display: flex;
   height: 150px;
@@ -42,34 +70,8 @@ body {
   visibility: visible;
 }
 
-#searchbar {
-  border: 1px solid;
-  border-color: #f1f1f1;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 12px;
-  width: 26%;
-}
-
-#searchbar:focus{
-  outline: rgba(0, 0, 0, 0.5);
-}
-
-#searchbarDiv {
-  display: grid;
-  position: relative;
-  background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 480px;
-  place-items: center;
-}
-
-
-
 #cityDiv {
-  min-height: 400px;
+  min-height: 300px;
   display: flex;
   justify-content: space-evenly;
   place-items: center;
@@ -78,8 +80,11 @@ body {
 #viewMoreBtn{
   display: flex;
   justify-content: center;
-  margin: 4% 0;
+  margin-bottom: 2%;
 }
+
+
+/*---------------------------------------------------- 576px < Responsive Design < 768px ----------------------------------------------------*/
 
 @media only screen and (min-width:576px) and ( max-width:768px) {
   #searchbar{
@@ -93,6 +98,9 @@ body {
     grid-template-columns: 40% 40%;
   }
 }
+
+/*-------------------------------------------------------- Responsive Design < 576px --------------------------------------------------------*/
+
 @media only screen and (max-width:576px){
   #searchbar{
     width: 40%;
