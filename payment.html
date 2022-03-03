@@ -16,22 +16,14 @@
 </head>
 
 <body>
-  <div>
-    <header>
-      <a href="index.html"><img id="logo" src="./assests/images/logo.png" height="150px" width="160px" alt="Logo"></a>
-      <div id="loginDiv">
-        <button class="btn btn-light" data-toggle="modal" data-target="#login-modal" type="button">
-          Login
-        </button>
-      </div>
-    </header>
+  <div id="container">
 
     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button type="button" id="loginModalClose" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -46,7 +38,7 @@
             </div>
           </div>
           <div class="modal-footer d-flex justify-content-center">
-            <button type="button" class="btn btn-primary">Login</button>
+            <button type="button" id="loginModalBtn" class="btn btn-primary">Login</button>
           </div>
         </div>
       </div>
@@ -99,27 +91,18 @@
         </div>
 
         <div id="payBtn">
-          <button type="button" class="btn btn-outline-success" disabled>Pay Now</button>
+          <button type="button" class="btn btn-success" disabled>Pay Now</button>
         </div>
       </div>
     </div>
 
-    <footer>
-      <div id="contactDiv">
-        <button data-toggle="modal" data-target="#contact-modal" class="btn btn-info">
-          <p id="contactBtn" style="color: #000;">Contact Us</p>
-        </button>
-      </div>
-      <div id="copyrightDiv">
-        <p id="copyright">Ⓒ 2021 AnkitProject</p>
-      </div>
-      <div id="socialMediaDiv">
-        <a href="https://www.facebook.com" target="_blank"><img class="socialMedia" src="assests/images/facebook.png" alt="facebook"></a>
-        <a href="https://www.instagram.com" target="_blank"><img class="socialMedia" src="assests/images/instagram.png" alt="instagram"></a>
-        <a href="https://www.twitter.com" target="_blank"><img class="socialMedia" src="assests/images/twitter.png" alt="twitter"></a>
-      </div>
-    </footer>
   </div>
+
+  
+  <script src="scripts/common.js"></script>
+  <script src="scripts/payment.js"></script>
+
+
 </body>
 
 </html>

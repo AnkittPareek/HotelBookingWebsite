@@ -5,9 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!------------------------------------------------------------Bootstrap------------------------------------------------------------>
+
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+  <!------------------------------------------------------------Stylesheets & fonts------------------------------------------------------------>
+
   <link rel="stylesheet" href="styles/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/common.css">
@@ -17,24 +24,15 @@
 <body>
   <div id="container">
 
-<!------------------------------------------------------------Header------------------------------------------------------------>
-
-    <header>
-      <img id="logo" src="./assests/images/logo.png" height="150px" width="160px" alt="Logo">
-      <div id="loginDiv">
-        <button class="btn btn-light" data-toggle="modal" data-target="#login-modal" type="button">
-          Login
-        </button>
-      </div>
-    </header>
 
 <!------------------------------------------------------------Login Modal------------------------------------------------------------>
+
     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button type="button" id="loginModalClose" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -49,7 +47,7 @@
             </div>
           </div>
           <div class="modal-footer d-flex justify-content-center">
-            <button type="button" class="btn btn-primary">Login</button>
+            <button type="button" id="loginModalBtn" class="btn btn-primary">Login</button>
           </div>
         </div>
       </div>
@@ -92,7 +90,7 @@
 
 <!------------------------------------------------------------City Cards------------------------------------------------------------>
 
-      <div id="cityDiv">
+      <div id="cityDiv1">
         <a href="list.html" class="cityImage" target="_self" style="text-decoration: none;">
           <div class="cityImage" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg) ;">
             <div class="foregroundColor">
@@ -118,7 +116,7 @@
       </div>
 
 
-      <div id="cityDiv">
+      <div id="cityDiv2">
         <a href="list.html" class="cityImage" target="_self" style="text-decoration: none;">
           <div class="cityImage" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg) ;">
             <div class="foregroundColor">
@@ -147,33 +145,18 @@
 <!------------------------------------------------------------ViewMore Button------------------------------------------------------------>
 
       <div id="viewMoreBtn">
-        <a style="color: #000; text-decoration: none;" href="">
-          <button class="btn btn-secondary">View more</button>
-        </a>
+          <button id="viewMore" class="btn btn-secondary">View More</button>
       </div>
     </div>
 
 
-
-<!------------------------------------------------------------Footer------------------------------------------------------------>
-
-    <footer>
-      <div id="contactDiv">
-        <button data-toggle="modal" data-target="#contact-modal" class="btn btn-info">
-          <p id="contactBtn" style="color: #000;">Contact Us</p>
-        </button>
-      </div>
-      <div id="copyrightDiv">
-        <p id="copyright">Ⓒ 2021 AnkitProject</p>
-      </div>
-      <div id="socialMediaDiv">
-        <a href="https://www.facebook.com" target="_blank"><img class="socialMedia" src="assests/images/facebook.png" alt="facebook"></a>
-        <a href="https://www.instagram.com" target="_blank"><img class="socialMedia" src="assests/images/instagram.png" alt="instagram"></a>
-        <a href="https://www.twitter.com" target="_blank"><img class="socialMedia" src="assests/images/twitter.png" alt="twitter"></a>
-      </div>
-    </footer>
-
   </div>
+  
+  <!------------------------------------------------------------JavaScripts------------------------------------------------------------>
+
+  <script src="scripts/common.js"></script>
+  <script src="scripts/index.js"></script>
+
 </body>
 
 </html>

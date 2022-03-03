@@ -70,12 +70,19 @@ body {
   visibility: visible;
 }
 
-#cityDiv {
+#cityDiv1 {
   min-height: 300px;
   display: flex;
   justify-content: space-evenly;
   place-items: center;
 }
+#cityDiv2 {
+  min-height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  place-items: center;
+}
+
 
 #viewMoreBtn{
   display: flex;
