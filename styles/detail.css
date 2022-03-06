@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   background-color: #e0e0e0;
   height: 100vh;
   width: 100vw;
@@ -22,22 +22,15 @@ body {
 
 .detailDiv{
   display: flex;
-  align-items: center;
-  margin: 3% 2% 0;
-  max-height: 400px;
-  justify-content: space-around;
+  margin: 3%;
   border: 1px solid black;
 }
 #slideShow{
-  flex-grow: 3;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   border-right: 1px solid black ;
+  padding: 1%;
 }
 #slideShow .carousel-item > div >img {
-  max-height: 350px;
-  padding: 1% 20% ;
+  max-height: 500px;
 }
 
 #descriptionDiv {
@@ -46,9 +39,9 @@ body {
 
 #form{
   display: flex;
-  height: 90%;
+  height: 100%;
   width: 30%;
-  padding: 0 2%;
+  padding: 1% 2%;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -65,6 +58,7 @@ body {
 }
 #submitButton input{
   padding: 2%;
+  margin-bottom: 0;
 }
 
 
@@ -81,41 +75,27 @@ body {
 {
   content: '>';
   font-size: 55px;
-  color: rosybrown;
+  color: white;
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 55px;
-  color: rosybrown;
+  color: white;
 }
 @media only screen and (min-width:576px) and ( max-width:768px) {
-  .detailDiv{
-    min-height: 380px;
-    max-height: 380px;
-    max-width: 650px;
-    min-width: 650px;
-  }
-  #slideShow{
-    max-height: 380px;
-    min-height: 380px;
-    max-width: 380px;
-    min-width: 380px;
-  }
+
   #slideShow .carousel-item > div >img {
     max-height: 380px;
-    min-height: 380px;
-    max-width: 550px ;
-    min-width: 550px;
-    margin: 20% 15% 20% 0;
   }
   #form{
+    padding: 2%;
     display: flex;
-    height: 100%;
-    width: 40%;
-    padding: 1% 1%;
     flex-direction: column;
     justify-content: space-between;
+  }
+  .inputs{
+    margin: 5px;
   }
   
 }
@@ -123,29 +103,21 @@ body {
   .detailDiv{
     display: flex;
     flex-direction: column;
-    max-width: 350px;
-    min-width: 90%;
-    min-height: 700px;
   }
   #slideShow{
     border-right: hidden;
     border-bottom: 1px solid black;
-    max-width: 100%;
-    min-width: 100%;
   }
   #slideShow .carousel-item > div >img {
-    margin: 1% ;
-    min-width: 500px;
+       height: 320px;
     min-height: 320px;
   }
   #form{
-    display: flex;
-    height: 100%;
-    width: 80%;
-    padding: 3% 2%;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 100%;
+    padding: 10%;
   }
- 
+  .inputs{
+    margin:5% 0;
+  }
 
 }

@@ -5,7 +5,7 @@ body {
   width: 100vw;
 }
 
-.hotelImage {
+#hotelImage {
   max-height: 300px;
   max-width: 270px;
 }

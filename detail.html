@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -99,11 +100,11 @@
       <div class="detailDiv">
 
 
-        <div id="slideShow" class="carousel slide" data-bs-ride="carousel">
+        <div id="slideShow" class="carousel slide col-lg-8 col-sm-8 " data-bs-ride="carousel">
 
           <div class="carousel-inner">
 
-            <div class="carousel-item active" data-bs-interval="10000">
+            <!-- <div class="carousel-item active" data-bs-interval="10000">
               <div class="d-flex justify-content-center">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="d-block w-100" alt="Image-1">
               </div> 
@@ -119,7 +120,7 @@
               <div class="d-flex justify-content-center">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg" class="d-block w-100" alt="Image-3">
               </div> 
-            </div>
+            </div> -->
 
           </div>
 
@@ -142,7 +143,7 @@
         <!------------------------------------------------------------ Form ------------------------------------------------------------>
 
 
-        <form id="form" action="payment.html">
+        <form id="form" class="col-lg-4 col-sm-4" action="payment.html">
           <div class="inputs">
             <label for="adults">Adults:</label>
             <input type="number" name="adults" id="noOfGuest" min="1" required>
@@ -166,35 +167,27 @@
           <div id="submitButton">
             <button type="submit" class="btn btn-outline-success">Book Now</button>
           </div>
+          <input type="number" id="id" name="id" style="display: none;">
         </form>
       </div>
+      <!------------------------------------------------------------ Description ------------------------------------------------------------>
+
       <div id="descriptionDiv">
-        <h2>Radison Blu Hotel</h2>
-        <p style="font-family: cursive;">RATING</p>
-        <p>
-          <i style="color: orange;" class="fa-solid fa-star"></i>
-          <i style="color: orange;" class="fa-solid fa-star"></i>
-          <i style="color: orange;" class="fa-solid fa-star"></i>
-          <i style="color: orange;" class="fa-solid fa-star"></i>
-          <i style="color: orange;" class="fa-solid fa-star"></i>
-        </p>
-        <p style="font-family: cursive;">AMENITIES</p>
-        <ul>
-          <li>Room service</li>
-          <li>Restaurant</li>
-          <li>Business center</li>
-          <li>Fitness center</li>
-          <li>pool</li>
+        <h2 id="NameOfHotel"></h2>
+        <p id="ratingText" style="font-family: cursive;">RATING</p>
+        <div id="rating" style="color: orange;"> 
+
+        </div><br>
+        <p id="HotelFeatures" style="font-family: cursive;">AMENITIES</p>
+        <ul id="amenities-list">
         </ul>
         <h5 style="font-family: cursive;">DESCRIPTION</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima sit accusantium
-          aut laudantium vel repellat, molestiae temporibus culpa voluptatum deleniti nobis eveniet
-          perferendis sed a, numquam sequi cumque quo!</p>
+        <p id="description"></p>
       </div>
     </div>
 
   </div>
-
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
   <script src="scripts/common.js"></script>
   <script src="scripts/detail.js"></script>
 

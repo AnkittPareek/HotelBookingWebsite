@@ -7,6 +7,8 @@ document.querySelector("#logoAnchor").style.pointerEvents = "none";
 
 // ______________________________________________Login and Logout functionality
 
+var loginState = false;
+
 document.querySelector("#loginModalBtn").addEventListener("click", function(){
     login();
 })
@@ -27,6 +29,7 @@ function login(){
         document.querySelector("#loginModalClose").click();
         document.querySelector("#headerLoginBtn").dataset.toggle = "modal hide";
     }
+    localStorage.setItem('loginState', 'true');
 }
 function logout(){
         localStorage.clear();

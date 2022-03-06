@@ -1,5 +1,4 @@
 
-
 //_____________________________________________Header Template
 
 
@@ -40,3 +39,13 @@ document.getElementById("container").innerHTML = headerTemplate + document.getEl
 document.getElementById("container").innerHTML = document.getElementById("container").innerHTML+ footerTemplate;
 
 
+// ___________________________________________________Login State 
+
+function restoreLogin(){
+  document.querySelector("#headerLoginBtn").innerText="LOGOUT";
+  document.querySelector("#headerLoginBtn").dataset.toggle = "modal hide";
+}
+
+if(localStorage.getItem('loginState')==="true"){
+restoreLogin();  
+}
