@@ -45,7 +45,7 @@ document.querySelector("#viewMore").addEventListener("click", viewMore)
 
 function viewMore(){
     if(document.querySelector("#viewMore").innerText === "View More"){
-        document.querySelector("#cityDiv2").style.display = "flex";
+        document.querySelector("#cityDiv2").style.display = "";
         document.querySelector("#viewMore").innerText = "View Less";
     }
     else{
@@ -53,3 +53,63 @@ function viewMore(){
         document.querySelector("#viewMore").innerText = "View More";
     }
     }
+
+
+// _________________________________________________Search Bar Functionality
+
+const searchBar = document.getElementById("searchbar");
+searchBar.addEventListener("input", searchForCity);
+
+function searchForCity() {
+  let cityName = searchBar.value;
+  if (cityName.length >= 3) {
+    const data = null;
+
+    const xhr = new XMLHttpRequest();
+    
+    xhr.addEventListener("readystatechange", function() {
+      if (this.readyState === this.DONE) {
+        let jsonData = JSON.parse(this.responseText);
+        console.log("search details");
+        console.log(jsonData.data.Typeahead_autocomplete.results);
+        parseSearchResults(jsonData.data.Typeahead_autocomplete.results);
+      }
+
+    });
+
+
+    xhr.open(
+      "GET",
+      `https://travel-advisor.p.rapidapi.com/locations/v2/auto-complete?query=${cityName}&lang=en_US&units=km`
+    );
+    xhr.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
+    xhr.setRequestHeader(
+      "x-rapidapi-key",
+      "3f53e646ccmsh47991b16859c58bp192276jsn70605e23962d"
+    );
+
+    xhr.send(data);
+  } 
+  
+  else {
+    document.getElementById("search-result").innerHTML = "";
+  }
+
+  function parseSearchResults(data) {
+    let displayResult = "";
+    data.forEach(getText);
+
+    let searchData = [];
+
+    function getText(item) {
+      if (item.detailsV2 != undefined && item.detailsV2.placeType == "CITY") {
+        displayResult =
+          displayResult +
+          `<a href="list.html?city=${item.detailsV2.names.name}">${item.detailsV2.names.name}</a>`;
+      }
+    }
+
+    const searchBarContent = document.getElementById("search-result");
+    searchBarContent.innerHTML = displayResult;
+  }
+}

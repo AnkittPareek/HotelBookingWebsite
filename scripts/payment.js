@@ -24,6 +24,7 @@ function login(){
         loggedIn = true;
         payNowBtn();
     }
+    localStorage.setItem('loginState', 'true');
 }
 function logout(){
         localStorage.clear();
@@ -57,12 +58,14 @@ const hotelId = urlParams.get("id");
 
 const data = null;
 const xhr = new XMLHttpRequest();
-
+document.getElementById("contentDiv").style.display = "none";
 xhr.addEventListener("readystatechange", function () {
   if (this.readyState === this.DONE) {
     const jsonData = JSON.parse(this.responseText);
     console.log(jsonData.data);
     getAndSetHotelDetails(jsonData.data[0]);
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("contentDiv").style.display = "block";
   }
 });
 

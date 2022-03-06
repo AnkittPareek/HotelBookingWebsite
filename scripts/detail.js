@@ -23,6 +23,7 @@ function login(){
         document.querySelector("#loginModalClose").click();
         document.querySelector("#headerLoginBtn").dataset.toggle = "modal hide";
     }
+    localStorage.setItem('loginState', 'true');
 }
 function logout(){
         localStorage.clear();
@@ -41,11 +42,12 @@ function fetchHotels() {
   const data = null;
 
   const xhr = new XMLHttpRequest();
-
+  document.getElementById("contentDiv").style.display = "none";
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === this.DONE) {
       const jsonData = JSON.parse(this.responseText);
-
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("contentDiv").style.display = "block";
       console.log(jsonData.data);
       parseHotelDetails(jsonData.data);
     }
