@@ -76,7 +76,7 @@ xhr.open(
 xhr.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
 xhr.setRequestHeader(
   "x-rapidapi-key",
-  "3f53e646ccmsh47991b16859c58bp192276jsn70605e23962d"
+  "2a3f88c87emshafc3031d71d3ef7p166a1ajsn7db4f52845a3"
 );
 
 xhr.send(data);
